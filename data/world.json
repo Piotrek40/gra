@@ -1,0 +1,52 @@
+{
+  "world": {
+    "locations": {
+      "miasto_startowe": {
+        "name": "Miasto Startowe",
+        "description": "Małe, spokojne miasteczko, w którym zaczynasz swoją przygodę.",
+        "npcs": ["kupiec_jan", "strażnik_piotr"],
+        "items": ["miecz_zardzewiały", "tarcza_drewniana"],
+        "exits": ["las_cieni"],
+        "events": []
+      },
+      "las_cieni": {
+        "name": "Las Cieni",
+        "description": "Gęsty i tajemniczy las, pełen nieznanych stworzeń.",
+        "npcs": ["tajemniczy_starzec"],
+        "items": ["zioła_uzdrawiające"],
+        "exits": ["miasto_startowe", "jaskinia"],
+        "events": []
+      },
+      "jaskinia": {
+        "name": "Jaskinia",
+        "description": "Mroczna jaskinia, z której słychać dziwne odgłosy.",
+        "npcs": ["goblin"],
+        "items": ["złota_monetka"],
+        "exits": ["las_cieni"],
+        "events": []
+      }
+    },
+    "connections": [
+      {
+        "from": "miasto_startowe",
+        "to": "las_cieni",
+        "description": "Ścieżka prowadząca do Lasu Cieni."
+      },
+      {
+        "from": "las_cieni",
+        "to": "jaskinia",
+        "description": "Ukryte przejście do Jaskini."
+      },
+      {
+        "from": "jaskinia",
+        "to": "las_cieni",
+        "description": "Wyjście z Jaskini do Lasu Cieni."
+      },
+      {
+        "from": "las_cieni",
+        "to": "miasto_startowe",
+        "description": "Ścieżka prowadząca z powrotem do Miasta Startowego."
+      }
+    ]
+  }
+}

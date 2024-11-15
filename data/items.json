@@ -1,0 +1,44 @@
+{
+    "items": {
+      "miecz_zardzewiały": {
+        "name": "Zardzewiały Miecz",
+        "description": "Stary miecz, który nadal może się przydać.",
+        "type": "broń",
+        "damage": 5
+      },
+      "tarcza_drewniana": {
+        "name": "Drewniana Tarcza",
+        "description": "Prosta tarcza wykonana z drewna.",
+        "type": "zbroja",
+        "defense": 2
+      },
+      "mikstura_zdrowia": {
+        "name": "Mikstura Zdrowia",
+        "description": "Przywraca 20 punktów zdrowia.",
+        "type": "konsumpcyjny",
+        "healing": 20
+      },
+      "klucz_do_jaskini": {
+        "name": "Klucz do Jaskini",
+        "description": "Klucz otwierający drzwi w jaskini.",
+        "type": "klucz"
+      },
+      "złota_monetka": {
+        "name": "Złota Monetka",
+        "description": "Błyszcząca złota moneta.",
+        "type": "waluta",
+        "value": 10
+      },
+      "zioła_uzdrawiające": {
+        "name": "Zioła Uzdrawiające",
+        "description": "Mogą posłużyć do stworzenia mikstury zdrowia.",
+        "type": "surowiec"
+      },
+      "chleb": { 
+        "name": "Chleb",
+        "description": "Świeży, pachnący chleb.",
+        "type": "jedzenie",
+        "healing": 10
+      }
+    }
+}

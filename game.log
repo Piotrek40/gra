@@ -1,0 +1,197 @@
+2024-11-13 14:41:10,441 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 14:41:10,442 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 14:41:10,451 - world - INFO - Załadowano 3 lokacji
+2024-11-13 14:41:10,479 - game - INFO - Inicjalizacja zakończona
+2024-11-13 14:41:12,457 - __main__ - ERROR - Błąd podczas inicjalizacji gry: 'NoneType' object has no attribute 'name'
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 48, in initialize_game
+    self.gui = ModernGameGUI(self.game_engine)
+  File "/mnt/d/gra/gui.py", line 18, in __init__
+    self.setup_command_buttons()
+  File "/mnt/d/gra/gui.py", line 186, in setup_command_buttons
+    self.setup_stats_panel()
+  File "/mnt/d/gra/gui.py", line 246, in setup_stats_panel
+    ("Gracz", self.game.player.name),
+AttributeError: 'NoneType' object has no attribute 'name'
+2024-11-13 14:41:12,473 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 15:46:02,239 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 15:46:02,240 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 15:46:02,243 - world - INFO - Załadowano 3 lokacji
+2024-11-13 15:46:02,249 - __main__ - ERROR - Błąd podczas inicjalizacji gry: Can't instantiate abstract class Player with abstract method get_loot
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 44, in initialize_game
+    self.game_engine = GameEngine()
+  File "/mnt/d/gra/game.py", line 70, in __init__
+    self.player = Player('player', default_player_data)
+TypeError: Can't instantiate abstract class Player with abstract method get_loot
+2024-11-13 15:46:02,253 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 15:54:24,565 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 15:54:24,566 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 15:54:24,568 - world - INFO - Załadowano 3 lokacji
+2024-11-13 15:54:24,573 - game - INFO - Inicjalizacja zakończona
+2024-11-13 15:54:25,932 - __main__ - ERROR - Błąd podczas inicjalizacji gry: 'Player' object has no attribute 'exp'
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 49, in initialize_game
+    self.gui = ModernGameGUI(self.game_engine)
+  File "/mnt/d/gra/gui.py", line 21, in __init__
+    self.setup_command_buttons()
+  File "/mnt/d/gra/gui.py", line 189, in setup_command_buttons
+    self.setup_stats_panel()
+  File "/mnt/d/gra/gui.py", line 255, in setup_stats_panel
+    ("Exp", self.create_progress_bar("exp")),
+  File "/mnt/d/gra/gui.py", line 297, in create_progress_bar
+    value = (self.game.player.exp / next_level) * 100
+AttributeError: 'Player' object has no attribute 'exp'
+2024-11-13 15:54:25,937 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 15:59:26,125 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 15:59:26,125 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 15:59:26,128 - world - INFO - Załadowano 3 lokacji
+2024-11-13 15:59:26,134 - game - INFO - Inicjalizacja zakończona
+2024-11-13 15:59:27,519 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 15:59:27,519 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 15:59:37,583 - __main__ - INFO - Zamykanie gry...
+2024-11-13 16:05:08,306 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 16:05:08,306 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 16:05:08,308 - world - INFO - Załadowano 3 lokacji
+2024-11-13 16:05:08,315 - game - INFO - Inicjalizacja zakończona
+2024-11-13 16:05:09,886 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 16:05:09,887 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 16:05:32,746 - __main__ - INFO - Zamykanie gry...
+2024-11-13 16:12:44,889 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 16:12:44,889 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 16:12:44,891 - world - INFO - Załadowano 3 lokacji
+2024-11-13 16:12:44,897 - game - INFO - Inicjalizacja zakończona
+2024-11-13 16:12:46,422 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 16:12:46,422 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 16:12:57,163 - __main__ - INFO - Zamykanie gry...
+2024-11-13 16:15:33,306 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 16:15:33,307 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 16:15:33,311 - world - INFO - Załadowano 3 lokacji
+2024-11-13 16:15:33,324 - game - INFO - Inicjalizacja zakończona
+2024-11-13 16:15:34,921 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 16:15:34,922 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 16:15:40,409 - __main__ - INFO - Zamykanie gry...
+2024-11-13 20:11:24,709 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 20:11:24,709 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 20:11:24,718 - world - ERROR - Błąd podczas ładowania świata: __init__() takes 3 positional arguments but 7 were given
+2024-11-13 20:11:24,718 - __main__ - ERROR - Błąd podczas inicjalizacji gry: __init__() takes 3 positional arguments but 7 were given
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 44, in initialize_game
+    self.game_engine = GameEngine()
+  File "/mnt/d/gra/game.py", line 46, in __init__
+    self.world = World()
+  File "/mnt/d/gra/world.py", line 204, in __init__
+    self._load_world(data_file)
+  File "/mnt/d/gra/world.py", line 218, in _load_world
+    self.locations[loc_id] = Location(loc_id, name, description, exits, items, npcs)
+TypeError: __init__() takes 3 positional arguments but 7 were given
+2024-11-13 20:11:24,728 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 20:23:01,592 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 20:23:01,592 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 20:23:01,594 - world - INFO - Załadowano 3 lokacji
+2024-11-13 20:23:01,617 - game - INFO - Inicjalizacja zakończona
+2024-11-13 20:23:03,338 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 20:23:03,338 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 20:29:33,880 - __main__ - INFO - Zamykanie gry...
+2024-11-13 20:36:49,788 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 20:36:49,789 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 20:36:49,791 - world - INFO - Załadowano 3 lokacji
+2024-11-13 20:36:49,797 - game - INFO - Inicjalizacja zakończona
+2024-11-13 20:36:51,100 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 20:36:51,101 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 20:45:54,865 - __main__ - INFO - Zamykanie gry...
+2024-11-13 20:46:08,561 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 20:46:08,562 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 20:46:08,564 - world - INFO - Załadowano 3 lokacji
+2024-11-13 20:46:08,570 - game - INFO - Inicjalizacja zakończona
+2024-11-13 20:46:08,570 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-13 20:46:08,571 - __main__ - ERROR - Błąd podczas inicjalizacji gry: 'Player' object has no attribute 'initialize_quests'
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 48, in initialize_game
+    self.game_engine.new_game("Bohater")  # Rozpocznij nową grę
+  File "/mnt/d/gra/game.py", line 90, in new_game
+    self.player.initialize_quests(self.quest_manager)
+AttributeError: 'Player' object has no attribute 'initialize_quests'
+2024-11-13 20:46:08,576 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 20:59:22,800 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 20:59:22,801 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 20:59:22,804 - world - INFO - Załadowano 3 lokacji
+2024-11-13 20:59:22,816 - game - INFO - Inicjalizacja zakończona
+2024-11-13 20:59:22,817 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-13 20:59:22,819 - __main__ - ERROR - Błąd podczas inicjalizacji gry: name 'logger' is not defined
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 48, in initialize_game
+    self.game_engine.new_game("Bohater")  # Rozpocznij nową grę
+  File "/mnt/d/gra/game.py", line 91, in new_game
+    self.player.initialize_quests(self.quest_manager)
+  File "/mnt/d/gra/player.py", line 849, in initialize_quests
+    logger.info(f"Zainicjalizowano system questów dla gracza {self.name}")
+NameError: name 'logger' is not defined
+2024-11-13 20:59:22,831 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-13 21:10:20,182 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-13 21:10:20,183 - game - INFO - Inicjalizacja systemów gry...
+2024-11-13 21:10:20,185 - world - INFO - Załadowano 3 lokacji
+2024-11-13 21:10:20,191 - game - INFO - Inicjalizacja zakończona
+2024-11-13 21:10:20,191 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-13 21:10:20,191 - player - INFO - Zainicjalizowano system questów dla gracza Bohater
+2024-11-13 21:10:21,548 - __main__ - INFO - Inicjalizacja zakończona pomyślnie
+2024-11-13 21:10:21,548 - __main__ - INFO - Uruchamianie trybu GUI...
+2024-11-13 21:11:36,241 - __main__ - INFO - Zamykanie gry...
+2024-11-14 11:42:16,913 - __main__ - CRITICAL - Krytyczny błąd: __init__() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 124, in main
+    game = GameLauncher(args)
+TypeError: __init__() takes 1 positional argument but 2 were given
+2024-11-14 11:45:54,204 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-14 11:45:54,204 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 11:45:54,221 - game - INFO - Inicjalizacja zakończona
+2024-11-14 11:45:54,222 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-14 11:45:54,226 - game - ERROR - Błąd podczas tworzenia nowej gry: Brakujące wymagane pola: ['name', 'type']
+2024-11-14 11:45:54,226 - __main__ - ERROR - Błąd podczas inicjalizacji gry: 'GameEngine' object has no attribute 'player'
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 57, in initialize_game
+    self.gui = ModernGameGUI(self.game_engine)
+  File "/mnt/d/gra/gui.py", line 12, in __init__
+    if not self.game or not self.game.player:
+AttributeError: 'GameEngine' object has no attribute 'player'
+2024-11-14 11:45:54,233 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-14 12:25:20,690 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-14 12:25:20,691 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 12:25:20,698 - game - INFO - Inicjalizacja zakończona
+2024-11-14 12:25:20,699 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-14 12:25:20,699 - player - INFO - Zainicjalizowano system questów dla gracza Bohater
+2024-11-14 12:25:20,699 - game - ERROR - Błąd podczas tworzenia nowej gry: 'NoneType' object has no attribute 'set_item_manager'
+2024-11-14 12:25:22,214 - __main__ - ERROR - Błąd podczas inicjalizacji gry: 'Player' object has no attribute 'current_location'
+Traceback (most recent call last):
+  File "/mnt/d/gra/main.py", line 57, in initialize_game
+    self.gui = ModernGameGUI(self.game_engine)
+  File "/mnt/d/gra/gui.py", line 32, in __init__
+    self.show_initial_description()
+  File "/mnt/d/gra/gui.py", line 239, in show_initial_description
+    location = self.game.world.get_location(self.game.player.current_location)
+AttributeError: 'Player' object has no attribute 'current_location'
+2024-11-14 12:25:22,219 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-14 12:43:55,867 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 12:43:55,875 - game - INFO - Inicjalizacja zakończona
+2024-11-14 12:43:55,876 - game - ERROR - Błąd podczas tworzenia nowej gry: name 'Inventory' is not defined
+2024-11-14 12:43:55,876 - __main__ - ERROR - Błąd podczas inicjalizacji gry: Nie udało się utworzyć nowej gry
+2024-11-14 12:43:55,876 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-14 12:52:04,838 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-14 12:52:04,838 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 12:52:04,846 - game - INFO - Inicjalizacja zakończona
+2024-11-14 12:52:04,847 - game - ERROR - Błąd podczas tworzenia nowej gry: object.__init__() takes exactly one argument (the instance to initialize)
+2024-11-14 12:52:04,847 - __main__ - ERROR - Błąd podczas inicjalizacji gry: Nie udało się utworzyć nowej gry
+2024-11-14 12:52:04,847 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-14 12:59:54,092 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-14 12:59:54,092 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 12:59:54,101 - game - INFO - Inicjalizacja zakończona
+2024-11-14 12:59:54,101 - game - ERROR - Błąd podczas tworzenia nowej gry: object.__init__() takes exactly one argument (the instance to initialize)
+2024-11-14 12:59:54,101 - __main__ - ERROR - Błąd podczas inicjalizacji gry: Nie udało się utworzyć nowej gry
+2024-11-14 12:59:54,102 - __main__ - ERROR - Nie udało się zainicjalizować gry
+2024-11-14 13:10:11,031 - __main__ - INFO - Inicjalizacja silnika gry...
+2024-11-14 13:10:11,031 - game - INFO - Inicjalizacja systemów gry...
+2024-11-14 13:10:11,041 - game - INFO - Inicjalizacja zakończona
+2024-11-14 13:10:11,042 - game - INFO - Rozpoczynanie nowej gry dla gracza: Bohater
+2024-11-14 13:10:11,042 - game - ERROR - Błąd podczas tworzenia nowej gry: object.__init__() takes exactly one argument (the instance to initialize)
+2024-11-14 13:10:11,042 - __main__ - ERROR - Błąd podczas inicjalizacji gry: Nie udało się utworzyć nowej gry
+2024-11-14 13:10:11,043 - __main__ - ERROR - Nie udało się zainicjalizować gry

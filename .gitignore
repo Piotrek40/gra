@@ -1,0 +1,14 @@
+# Ignoruj środowisko wirtualne
+venv/
+env/
+.venv/
+
+# Ignoruj inne niechciane podfoldery
+nazwa_innego_podfolderu1/
+nazwa_innego_podfolderu2/
+
+# Ignoruj pliki tymczasowe i cache
+__pycache__/
+*.pyc
+*.pyo
+

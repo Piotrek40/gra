@@ -1,0 +1,195 @@
+{
+    "quests": {
+        "dostawa_towarow": {
+            "name": "Dostawa towarów",
+            "giver": "kupiec_jan",
+            "description": "Kupiec Jan potrzebuje dostarczyć towary do sąsiedniego miasta, ale droga jest niebezpieczna.",
+            "type": "delivery",
+            "difficulty": "easy",
+            "min_level": 1,
+            "stages": [
+                {
+                    "id": 1,
+                    "description": "Odbierz towary od Kupca Jana",
+                    "objective": "talk_to",
+                    "target": "kupiec_jan",
+                    "dialog": "Potrzebuję kogoś, kto dostarczy te towary do miasta. Zapłacę 100 sztuk złota."
+                },
+                {
+                    "id": 2,
+                    "description": "Dostarcz towary do miasta",
+                    "objective": "go_to",
+                    "target": "trakt_kupiecki",
+                    "optional": {
+                        "combat": "bandyta_prosty",
+                        "reward_bonus": 50
+                    }
+                }
+            ],
+            "rewards": {
+                "gold": 100,
+                "exp": 50,
+                "items": ["mikstura_zdrowia"],
+                "reputation": {
+                    "gildia_kupcow": 10
+                }
+            },
+            "failure_penalties": {
+                "reputation": {
+                    "gildia_kupcow": -5
+                }
+            }
+        },
+        "polowanie_na_wilki": {
+            "name": "Problem z wilkami",
+            "giver": "mysliwy_borys",
+            "description": "Stado wilków terroryzuje okoliczne wioski. Myśliwy Borys prosi o pomoc w ich wytropieniu.",
+            "type": "hunting",
+            "difficulty": "medium",
+            "min_level": 2,
+            "prerequisites": {
+                "reputation": {
+                    "mysliwi": 0
+                }
+            },
+            "stages": [
+                {
+                    "id": 1,
+                    "description": "Porozmawiaj z Myśliwym Borysem o wilkach",
+                    "objective": "talk_to",
+                    "target": "mysliwy_borys"
+                },
+                {
+                    "id": 2,
+                    "description": "Znajdź ślady wilków w Lesie Cieni",
+                    "objective": "investigate",
+                    "target": "las_cieni",
+                    "required_items": ["trop_wilka"]
+                },
+                {
+                    "id": 3,
+                    "description": "Pokonaj alfę stada",
+                    "objective": "kill",
+                    "target": "wilk_alfa",
+                    "count": 1
+                }
+            ],
+            "rewards": {
+                "gold": 200,
+                "exp": 150,
+                "items": ["skora_wilka_alfy", "kiel_wilka"],
+                "reputation": {
+                    "mysliwi": 20,
+                    "krag_druidow": -5
+                }
+            }
+        },
+        "zaginiony_amulet": {
+            "name": "Zaginiony amulet",
+            "giver": "tajemniczy_starzec",
+            "description": "Tajemniczy starzec twierdzi, że w jaskini znajduje się starożytny amulet o wielkiej mocy.",
+            "type": "exploration",
+            "difficulty": "hard",
+            "min_level": 3,
+            "time_limit": "7 days",
+            "stages": [
+                {
+                    "id": 1,
+                    "description": "Znajdź wejście do starożytnej części jaskini",
+                    "objective": "explore",
+                    "target": "jaskinia",
+                    "required_items": ["stara_mapa"]
+                },
+                {
+                    "id": 2,
+                    "description": "Pokonaj strażnika amulet",
+                    "objective": "kill",
+                    "target": "goblin_szaman",
+                    "count": 1
+                },
+                {
+                    "id": 3,
+                    "description": "Zdobądź amulet",
+                    "objective": "collect",
+                    "target": "pradawny_amulet"
+                },
+                {
+                    "id": 4,
+                    "description": "Wróć do Tajemniczego Starca",
+                    "objective": "talk_to",
+                    "target": "tajemniczy_starzec",
+                    "choices": [
+                        {
+                            "text": "Oddaj amulet",
+                            "rewards": {
+                                "gold": 500,
+                                "exp": 300,
+                                "reputation": {
+                                    "krag_druidow": 30
+                                }
+                            }
+                        },
+                        {
+                            "text": "Zachowaj amulet",
+                            "rewards": {
+                                "items": ["pradawny_amulet"],
+                                "reputation": {
+                                    "krag_druidow": -20
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "rewards": {
+                "exp": 200,
+                "unlock_quest": "tajemnice_pradawnych"
+            }
+        },
+        "zielarka_potrzebuje_pomocy": {
+            "name": "Zioła dla Zielarki",
+            "giver": "zielarka_anna",
+            "description": "Zielarka Anna potrzebuje rzadkich ziół do swoich mikstur.",
+            "type": "gathering",
+            "difficulty": "easy",
+            "min_level": 1,
+            "repeatable": true,
+            "cooldown": "1 day",
+            "stages": [
+                {
+                    "id": 1,
+                    "description": "Zbierz zioła w Lesie Cieni",
+                    "objective": "gather",
+                    "target": "ziola_rzadkie",
+                    "count": 5
+                }
+            ],
+            "rewards": {
+                "gold": 50,
+                "exp": 30,
+                "items": ["mikstura_zdrowia"],
+                "reputation": {
+                    "zielarze": 5
+                }
+            }
+        }
+    },
+    "quest_types": {
+        "delivery": {
+            "name": "Dostawa",
+            "description": "Questy polegające na dostarczeniu przedmiotów"
+        },
+        "hunting": {
+            "name": "Polowanie",
+            "description": "Questy polegające na polowaniu na potwory"
+        },
+        "exploration": {
+            "name": "Eksploracja",
+            "description": "Questy polegające na odkrywaniu nowych miejsc"
+        },
+        "gathering": {
+            "name": "Zbieranie",
+            "description": "Questy polegające na zbieraniu surowców"
+        }
+    }
+}

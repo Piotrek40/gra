@@ -1,0 +1,62 @@
+{
+    "characters": {
+      "kupiec_jan": {
+        "name": "Kupiec Jan",
+        "description": "Przyjazny kupiec sprzedający podstawowe towary.",
+        "location": "miasto_startowe",
+        "dialogues": ["Witaj, podróżniku! Czy chcesz coś kupić?"],
+        "inventory": ["mikstura_zdrowia", "chleb", "miecz_zardzewiały", "tarcza_drewniana"],
+        "prices": {
+            "miecz_zardzewiały": 100,
+            "tarcza_drewniana": 80,
+            "mikstura_zdrowia": 50,
+            "chleb": 10
+        }
+      },
+      "strażnik_piotr": {
+        "name": "Strażnik Piotr",
+        "description": "Czujny strażnik pilnujący porządku w mieście.",
+        "location": "miasto_startowe",
+        "dialogues": ["Uważaj na niebezpieczeństwa poza murami miasta."],
+        "inventory": []
+      },
+      "tajemniczy_starzec": {
+        "name": "Tajemniczy Starzec",
+        "description": "Stary mężczyzna o przenikliwym spojrzeniu.",
+        "location": "las_cieni",
+        "dialogues": ["Nie wszystko jest takie, jakim się wydaje..."],
+        "inventory": ["klucz_do_jaskini"]
+      },
+      "goblin": {
+            "name": "Goblin",
+            "description": "Małe, złośliwe stworzenie.",
+            "location": "jaskinia",
+            "dialogues": ["Grrrr!"],
+            "is_enemy": true,
+            "health": 30,
+            "strength": 8,
+            "defense": 3,
+            "exp": 25,
+            "inventory": ["złota_monetka"],
+            "loot_table": {
+                "mikstura_zdrowia": 0.3,
+                "złota_monetka": 0.8
+            }
+        },
+        "wilk": {
+            "name": "Dziki Wilk",
+            "description": "Groźny wilk z lasu.",
+            "location": "las_cieni",
+            "is_enemy": true,
+            "health": 40,
+            "strength": 12,
+            "defense": 2,
+            "exp": 35,
+            "inventory": [],
+            "loot_table": {
+                "skóra_wilka": 0.9,
+                "kieł_wilka": 0.4
+            }
+        }
+    }
+}

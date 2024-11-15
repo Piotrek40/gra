@@ -1,0 +1,150 @@
+{
+    "skills": {
+        "combat": {
+            "walka_mieczem": {
+                "name": "Walka mieczem",
+                "description": "Umiejętność władania mieczem",
+                "max_level": 5,
+                "levels": {
+                    "1": {
+                        "description": "Podstawy walki mieczem",
+                        "damage_bonus": 2,
+                        "required_exp": 0
+                    },
+                    "2": {
+                        "description": "Blokowanie ciosów",
+                        "damage_bonus": 4,
+                        "defense_bonus": 1,
+                        "required_exp": 100
+                    },
+                    "3": {
+                        "description": "Pchnięcie",
+                        "damage_bonus": 6,
+                        "special_attack": "thrust",
+                        "required_exp": 300
+                    },
+                    "4": {
+                        "description": "Mistrzostwo obrony",
+                        "damage_bonus": 8,
+                        "defense_bonus": 2,
+                        "required_exp": 600
+                    },
+                    "5": {
+                        "description": "Wirujący cios",
+                        "damage_bonus": 10,
+                        "special_attack": "whirlwind",
+                        "required_exp": 1000
+                    }
+                }
+            },
+            "lucznictwo": {
+                "name": "Łucznictwo",
+                "description": "Umiejętność strzelania z łuku",
+                "max_level": 5,
+                "levels": {
+                    "1": {
+                        "description": "Podstawy łucznictwa",
+                        "damage_bonus": 2,
+                        "required_exp": 0
+                    },
+                    "2": {
+                        "description": "Celny strzał",
+                        "damage_bonus": 4,
+                        "accuracy_bonus": 10,
+                        "required_exp": 100
+                    }
+                }
+            }
+        },
+        "crafting": {
+            "kowalstwo": {
+                "name": "Kowalstwo",
+                "description": "Umiejętność wytwarzania broni i pancerzy",
+                "max_level": 5,
+                "levels": {
+                    "1": {
+                        "description": "Podstawy kowalstwa",
+                        "recipes": ["miecz_zelazny", "tarcza_zelazna"],
+                        "required_exp": 0
+                    },
+                    "2": {
+                        "description": "Ulepszanie broni",
+                        "recipes": ["miecz_stalowy"],
+                        "special_ability": "weapon_improvement",
+                        "required_exp": 150
+                    }
+                }
+            },
+            "zielarstwo": {
+                "name": "Zielarstwo",
+                "description": "Umiejętność zbierania i przetwarzania ziół",
+                "max_level": 5,
+                "levels": {
+                    "1": {
+                        "description": "Podstawy zielarstwa",
+                        "recipes": ["mikstura_zdrowia_mala"],
+                        "gathering_bonus": 10,
+                        "required_exp": 0
+                    },
+                    "2": {
+                        "description": "Zaawansowane mikstury",
+                        "recipes": ["mikstura_zdrowia_srednia", "mikstura_many"],
+                        "gathering_bonus": 20,
+                        "required_exp": 200
+                    }
+                }
+            }
+        },
+        "survival": {
+            "tropienie": {
+                "name": "Tropienie",
+                "description": "Umiejętność śledzenia i znajdowania stworzeń",
+                "max_level": 3,
+                "levels": {
+                    "1": {
+                        "description": "Podstawy tropienia",
+                        "detection_range": 10,
+                        "required_exp": 0
+                    },
+                    "2": {
+                        "description": "Zaawansowane tropienie",
+                        "detection_range": 20,
+                        "special_ability": "track_rare_creatures",
+                        "required_exp": 250
+                    }
+                }
+            }
+        }
+    },
+    "special_abilities": {
+        "thrust": {
+            "name": "Pchnięcie",
+            "description": "Silny atak zadający podwójne obrażenia",
+            "damage_multiplier": 2.0,
+            "stamina_cost": 30,
+            "cooldown": 10
+        },
+        "whirlwind": {
+            "name": "Wirujący cios",
+            "description": "Atak obszarowy trafiający wszystkich przeciwników w zasięgu",
+            "damage_multiplier": 1.5,
+            "range": 2,
+            "stamina_cost": 50,
+            "cooldown": 30
+        },
+        "weapon_improvement": {
+            "name": "Ulepszanie broni",
+            "description": "Możliwość ulepszania broni o +1 do obrażeń",
+            "cost": {
+                "gold": 100,
+                "materials": ["ruda_zelaza"]
+            }
+        },
+        "track_rare_creatures": {
+            "name": "Tropienie rzadkich stworzeń",
+            "description": "Możliwość znajdowania rzadkich stworzeń",
+            "success_chance": 0.25,
+            "cooldown": 3600
+        }
+    }
+}
