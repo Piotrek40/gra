@@ -1,14 +1,17 @@
-# Ignoruj środowisko wirtualne
-venv/
-env/
-.venv/
+# Ignoruj ustawienia edytorów
+.vscode/
 
-# Ignoruj inne niechciane podfoldery
-nazwa_innego_podfolderu1/
-nazwa_innego_podfolderu2/
-
-# Ignoruj pliki tymczasowe i cache
+# Ignoruj foldery tymczasowe Pythona
 __pycache__/
 *.pyc
 *.pyo
+
+# Ignoruj folder z instalatorem Pythona
+Python-3.9.13/
+Python-3.9.13.tgz
+
+# Ignoruj inne niechciane foldery
+pio/
+.vscode/
+__pycache__/
 
